@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Nav, MenuButton, IconMenu, MenuList, Offcanvas, CloseButton, IconClose, MenuItem, Userdiv, User } from '../../styles/Navbar/styled.js'
+import { Nav, MenuButton, IconMenu, MenuList, Offcanvas, CloseButton, IconClose, MenuItem, Userdiv, User } from '../../styles/navbar/styled.js'
 import Logo from './Logo.jsx'
 import Search from './Search.jsx'
 
