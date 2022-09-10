@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Formulario, SearchIcon } from '../../styles/Navbar/search.js'
+import { Formulario, SearchIcon } from '../../styles/navbar/search.js'
 import { useNavigate } from 'react-router-dom'
 import { SearchAlt } from '@styled-icons/boxicons-regular/SearchAlt'
 
