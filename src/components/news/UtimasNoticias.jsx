@@ -5,8 +5,7 @@ import Carga from '../Carga'
 import { Container, Card, BodyCard, ContainerImg, Titulo } from '../../styles/home/card_noticiaReciente.js'
 
 
-const CardNoticiasRecientes = ({ News, isLoading }) => {
-
+const UtimasNoticias = ({ News, isLoading }) => {
 
 
   if (isLoading) {
@@ -37,4 +36,20 @@ const CardNoticiasRecientes = ({ News, isLoading }) => {
 
 
 
-export default CardNoticiasRecientes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default UtimasNoticias

@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +16,11 @@
 
 
 
-  --fondo: #001A2C;
+  /* --fondo: #001A2C;
   --letras: #fff;
   --fondo-secundario: #002137;
   --transition: all 0.3s ease-in-out;
-  --img-background: url("https://res.cloudinary.com/dtskurpgj/image/upload/v1655084312/animemanager/LoginRegistro.png");
+  --img-background: url("https://res.cloudinary.com/dtskurpgj/image/upload/v1655084312/animemanager/LoginRegistro.png"); */
 
 
 
@@ -37,8 +37,8 @@ a {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--fondo);
-  color: var(--letras);
+  /* background: var(--fondo);
+  color: var(--letras); */
 }
 
 * {
@@ -61,14 +61,11 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
-}
-
+/* 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

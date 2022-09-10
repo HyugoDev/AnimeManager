@@ -1,6 +1,6 @@
 import React from 'react'
 import Directorio from '../components/anime/Directorio.jsx'
-import CardNoticiasRecientes from '../components/news/Card_NoticiasRecientes.jsx'
+import UtimasNoticias from '../components/news/UtimasNoticias.jsx'
 import { useParams } from 'react-router-dom'
 import Carga from '../components/Carga'
 
@@ -37,7 +37,7 @@ const Search = () => {
           (
             <>
               <h2>Noticias</h2>
-              <CardNoticiasRecientes News={News} isLoading={isLoadingNews} />
+              <UtimasNoticias News={News} isLoading={isLoadingNews} />
             </>
           ) : (null)
       }

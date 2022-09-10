@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
-import { Contenedor, Left, ArrowLeft, Middle, Right, ArrowRight } from '../../styles/home/episodiorecientes.js'
+import { Contenedor, Left, ArrowLeft, Middle, Right, ArrowRight } from '../../styles/home/UtimosEpisodios.js'
 import CardEpisodesRecientes from './Card_EpisodesRecientes'
 import useInicioFin from '../../hooks/useInicioFin.js'
 
@@ -8,12 +8,9 @@ import { GetLastAnime } from '../../services/AnimeServices.js'
 import Carga from '../Carga.jsx'
 
 
-const EpisodiosRecientes = () => {
-
+const UltimosEpisodios = () => {
   const { Animes, isLoading } = GetLastAnime()
-
   const [tamano, setTamano] = useState(window.innerWidth)
-
 
   useEffect(() => {
     window.addEventListener('resize', () => {
@@ -21,19 +18,17 @@ const EpisodiosRecientes = () => {
     })
   }, [])
 
-
-
   const { Inicio, Fin, Decrementar, Incrementar } = useInicioFin(Animes, tamano)
+
+
+
 
   if (isLoading) {
     return <Carga />
   }
-
   return (
     <>
       <Titulo>Ultimos Episodios</Titulo>
-
-
       <Contenedor>
         <Left>
           <ArrowLeft onClick={Decrementar} />
@@ -64,5 +59,5 @@ const Titulo = Styled.h3`
 `
 
 
-export default EpisodiosRecientes
+export default UltimosEpisodios
 
