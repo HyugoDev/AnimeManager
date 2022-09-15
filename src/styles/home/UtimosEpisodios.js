@@ -50,3 +50,10 @@ export const Contenedor = Styled.section`
 
     
 `
+
+export const Titulo = Styled.h3`
+    text-align: center;
+    color: #fff;
+
+    margin-top: 20px;
+`

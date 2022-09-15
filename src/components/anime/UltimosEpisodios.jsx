@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Styled from 'styled-components'
-import { Contenedor, Left, ArrowLeft, Middle, Right, ArrowRight } from '../../styles/home/UtimosEpisodios.js'
+import { Contenedor, Left, ArrowLeft, Middle, Right, ArrowRight, Titulo } from '../../styles/home/UtimosEpisodios.js'
 import CardEpisodesRecientes from './Card_EpisodesRecientes'
 import useInicioFin from '../../hooks/useInicioFin.js'
 
@@ -51,12 +50,6 @@ const UltimosEpisodios = () => {
   )
 }
 
-const Titulo = Styled.h3`
-    text-align: center;
-    color: #fff;
-
-    margin-top: 20px;
-`
 
 
 export default UltimosEpisodios
