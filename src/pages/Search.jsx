@@ -36,7 +36,6 @@ const Search = () => {
         News ?
           (
             <>
-              <h2>Noticias</h2>
               <UtimasNoticias News={News} isLoading={isLoadingNews} />
             </>
           ) : (null)

@@ -1,11 +1,10 @@
-import Styled from 'styled-components'
+import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Menu } from 'styled-icons/boxicons-regular'
 import { Close } from 'styled-icons/evaicons-solid'
 
 
-export const Nav = Styled.nav`
-    background-color: linear-gradient(to top , #001A2C, #002945);
+export const Nav = styled.nav`
     height: 60px;
     width: 100%;
     display: flex;
@@ -13,20 +12,20 @@ export const Nav = Styled.nav`
     align-items: center;
     padding: 0 20px;
 `
-export const MenuButton = Styled.button`
+export const MenuButton = styled.button`
       transition: visibility linear 0.3s;
       visibility: ${props => props.open ? 'hidden' : 'visible'};
 `
-export const IconMenu = Styled(Menu)`
+export const IconMenu = styled(Menu)`
     color: #fff;
     width: 2rem;
     height: 2rem;
     cursor: pointer;
-    background-image: linear-gradient(to top , #001A2C, #002945);
+    
 
 `
 
-export const MenuList = Styled.div`
+export const MenuList = styled.div`
       visibility: ${props => props.open ? 'visible' : 'hidden'};
       position: fixed;
       top: 0;
@@ -40,13 +39,13 @@ export const MenuList = Styled.div`
       flex-direction: column;
       transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
       
-      background-image: linear-gradient(to top , #002945, #001A2C);
+      background-color: #121212;
       opacity: 0.9;
 
 
       transition: all 0.3s linear;
 `
-export const MenuItem = Styled(Link)`
+export const MenuItem = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +61,7 @@ export const MenuItem = Styled(Link)`
       opacity: 0.8;
     }
 `
-export const CloseButton = Styled.button`
+export const CloseButton = styled.button`
     position: absolute;
     top: 0;
     right: 0;
@@ -71,7 +70,7 @@ export const CloseButton = Styled.button`
     background: transparent;
 `
 
-export const IconClose = Styled(Close)`
+export const IconClose = styled(Close)`
     color: #fff;
     width: 2rem;
     height: 2rem;
@@ -79,7 +78,7 @@ export const IconClose = Styled(Close)`
 
 `
 
-export const Offcanvas = Styled.div`
+export const Offcanvas = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,11 +87,11 @@ export const Offcanvas = Styled.div`
   `
 
 
-export const Userdiv = Styled.div`
+export const Userdiv = styled.div`
 
 `;
 
-export const User = Styled.div`
+export const User = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
