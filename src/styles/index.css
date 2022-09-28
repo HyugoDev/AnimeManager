@@ -22,12 +22,8 @@
   --transition: all 0.3s ease-in-out;
   --img-background: url("https://res.cloudinary.com/dtskurpgj/image/upload/v1655084312/animemanager/LoginRegistro.png"); */
 
-
-
-
-
-
 }
+
 
 a {
   text-decoration: none;
@@ -80,4 +76,22 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+/* Scroll */
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #321F27;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #45011A;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #DC5B51, #E47168);
 }
